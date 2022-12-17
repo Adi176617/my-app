@@ -3,7 +3,7 @@ pipeline {
     dockerfile true
     }
 
-  }
+  
   stages {
     stage('Build') {
       steps {
@@ -12,11 +12,7 @@ pipeline {
       }
     }
 
-    stage('Deploy') {
-      steps {
-        sh '''npm start
-'''
-      }
+  
     }
 
   }

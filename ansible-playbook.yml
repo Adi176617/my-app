@@ -1,0 +1,4 @@
+- name: pull an image
+  docker_image:
+    name: adhi100doc/react-docker-123
+    tag: latest

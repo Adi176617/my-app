@@ -1,4 +1,7 @@
-- name: pull an image
-  docker_image:
-    name: adhi100doc/react-docker-123
-    tag: latest
+-hosts: webserver
+ become: true
+ tasks: 
+ - name: pull an image
+   docker_image:
+      name: adhi100doc/react-docker-123
+      tag: latest

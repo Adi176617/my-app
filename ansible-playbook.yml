@@ -20,7 +20,7 @@
           state: present
           recreate: yes
           ports:
-           - "8080:9000"
+           - "8080:3000"
       - name: Run data container
         docker_container:
           name: react-project
@@ -28,4 +28,4 @@
           state: started
           recreate: yes
           ports:
-           - "8080:9000"
+           - "8080:3000"

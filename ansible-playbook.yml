@@ -4,11 +4,8 @@
     become: yes
     become_user: root
     tasks:
-      - name: ensure apache is at the latest version
-        yum:
-          name: httpd
-          state: latest
       - name: pull an image
         docker_image:
           name: adhi100doc/react-docker-123
           tag: latest
+          source: pull

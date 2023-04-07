@@ -9,7 +9,7 @@
           name: adhi100doc/react-docker-123
           tag: latest
           source: pull
-      - name: Create a data container
+      - name: Create container
         docker_container:
           name: react-project
           image: adhi100doc/react-docker-123:latest
@@ -17,3 +17,8 @@
           recreate: yes
           ports:
            - "8080:9000"
+      - name: Run data container
+        docker_container:
+          name: react-project
+          image: adhi100doc/react-docker-123:latest
+          state: started

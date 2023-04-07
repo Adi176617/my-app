@@ -22,3 +22,5 @@
           name: react-project
           image: adhi100doc/react-docker-123:latest
           state: started
+          ports:
+           - "8080:9000"

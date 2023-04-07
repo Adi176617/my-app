@@ -12,7 +12,7 @@
       - name: Create a data container
         docker_container:
           name: react-project
-          image: latest
+          image: adhi100doc/react-docker-123:latest
           state: present
           recreate: yes
           ports:
